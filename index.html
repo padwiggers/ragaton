@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,10 +11,23 @@
 <body>
     <div class="container">
         <div class="login-box">
-            <h2>Login</h2>
-            <input type="text" placeholder="Usuário" required />
-            <input type="password" placeholder="Senha" required />
-            <a class="entrar" href="pages/home.html">Entrar</a>
+            <h2>Entrar</h2>
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Usuário</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" required>
+                <label>Senha</label>
+            </div>
+
+            <a class="btn-entrar" href="pages/home.html">Entrar</a>
+
+            <p class="register">
+                Ainda não tem conta? <a href="/pages/registro.html">Criar agora</a>
+            </p>
         </div>
     </div>
 </body>
