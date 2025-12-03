@@ -1,50 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatrip - Aluguel de JetSkis e Lanchas</title>
     <link rel="stylesheet" href="/css/home.css">
-    <title>Aquatrip - Home</title>
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="circle"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Aquatrip</div>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Jet Skis</a>
+            <a href="#">Lanchas</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Buscar veículos...">
+            <button>🔍</button>
+        </div>
+
+        <button class="menu-btn">☰</button>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#">Jet Skis</a>
+        <a href="#">Lanchas</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
     </div>
 
+    <!-- MAIN -->
+    <main>
 
-    <main class="content">
-        <header class="top-bar">
-            <div class="left-area">
-                <h1 class="logo">aquatrip</h1>
-            </div>
-
-
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#veiculos">Veículos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-
-
-            <div class="search-box">
-                <input type="text" placeholder="Buscar...">
-                <button>🔍</button>
-            </div>
-        </header>
-
-
+        <!-- CARROSSEL -->
         <section class="carousel">
             <button class="arrow left">◀</button>
-            <div class="carousel-content"></div>
+            <div class="carousel-content">
+                <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e" alt="Jet Ski">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Lancha">
+                <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071" alt="Passeio">
+            </div>
             <button class="arrow right">▶</button>
         </section>
 
+        <h2 class="section-title">Veículos Disponíveis</h2>
 
-        <button class="big-btn">Explorar Veículos</button>
+        <!-- GRID DE VEÍCULOS -->
+        <section class="vehicle-grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604079628040-943af71173a1" alt="Jet Ski">
+                <h3>Jet Ski Yamaha FX</h3>
+                <p class="price">R$ 450 / hora</p>
+                <button class="card-btn">Alugar agora</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1529692236671-f1dc28b1e20b" alt="Lancha">
+                <h3>Lancha FS 280</h3>
+                <p class="price">R$ 1.200 / hora</p>
+                <button class="card-btn">Alugar agora</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1597571476381-5fbd8b7cbdeb" alt="Jet Ski">
+                <h3>Sea-Doo GTX 300</h3>
+                <p class="price">R$ 550 / hora</p>
+                <button class="card-btn">Alugar agora</button>
+            </div>
+
+        </section>
+
+        <button class="big-btn">Ver todos os veículos</button>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Aquatrip — Aluguel de Jet Skis e Lanchas</p>
+    </footer>
+
+    <script>
+        // Menu Mobile
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>
