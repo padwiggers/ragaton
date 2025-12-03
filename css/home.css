@@ -64,6 +64,22 @@
     cursor: pointer;
 }
 
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+}
+
 /* MENU MOBILE */
 .menu-btn {
     display: none;
