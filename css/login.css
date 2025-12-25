@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #f2f4f5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER CENTRAL */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+    background: #ffffff;
+    padding: 50px 35px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* TÍTULO */
+.login-box h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+}
+
+/* INPUTS COM LABEL FLUTUANTE */
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px 14px;
+    padding-top: 22px;
+    border: 2px solid #ddd;
+    border-radius: 14px;
+    outline: none;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e88e5;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(30, 136, 229, 0.15);
+}
+
+.input-group label {
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    font-size: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease;
+    background: #fff;
+    padding: 0 4px;
+}
+
+
+
